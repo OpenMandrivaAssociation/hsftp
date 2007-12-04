@@ -41,5 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc readme license hsftp.lsm
 %{_bindir}/*
-%{_mandir}/man1/*.1.bz2
+%{_mandir}/man1/*.1*
 
