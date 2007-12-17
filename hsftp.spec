@@ -10,7 +10,6 @@ Source0: %{name}-%{version}.tar.bz2
 License: GPL 
 URL: http://la-samhna.de/hsftp/
 Group: Networking/File transfer
-BuildRoot: %{_tmppath}/%{name}-buildroot
 Prefix: %{_prefix}
 Requires: openssh-clients
 
