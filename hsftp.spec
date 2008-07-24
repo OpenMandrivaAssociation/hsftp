@@ -1,6 +1,6 @@
 %define name    hsftp 
 %define version 1.15
-%define release  %mkrel 1
+%define release  %mkrel 3
 
 Summary: FTP-type client using SSH to transfer files 
 Name: %{name}
