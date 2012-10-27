@@ -3,6 +3,7 @@ Name:		hsftp
 Version:	1.15
 Release:	5
 Source0:	%{name}-%{version}.tar.bz2
+Patch0:		hsftp-1.15-fix-string-format.patch
 License:	GPL 
 URL:		http://la-samhna.de/hsftp/
 Group:		Networking/File transfer
@@ -15,6 +16,7 @@ no additional libraries.
 
 %prep
 %setup -q
+%patch0 -p1 -b .str_fmt~
 
 %build
 %configure
