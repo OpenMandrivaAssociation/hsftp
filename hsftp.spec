@@ -4,6 +4,7 @@ Version:	1.15
 Release:	5
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		hsftp-1.15-fix-string-format.patch
+Patch1:		hsftp-1.15-dont-strip-binary.patch
 License:	Public Domain 
 URL:		http://la-samhna.de/hsftp/
 Group:		Networking/File transfer
@@ -18,6 +19,7 @@ no additional libraries.
 %prep
 %setup -q
 %patch0 -p1 -b .str_fmt~
+%patch1 -p1 -b .nostrip~
 
 %build
 %configure	--with-readline
