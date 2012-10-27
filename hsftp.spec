@@ -8,6 +8,7 @@ License:	Public Domain
 URL:		http://la-samhna.de/hsftp/
 Group:		Networking/File transfer
 Requires:	openssh-clients
+BuildRequires:	readline-devel
 
 %description
 hsftp is an FTP emulator that provides the look and feel of an FTP session,
@@ -19,7 +20,7 @@ no additional libraries.
 %patch0 -p1 -b .str_fmt~
 
 %build
-%configure
+%configure	--with-readline
 %make
 
 %install
