@@ -1,0 +1,11 @@
+--- hsftp-1.15/hsftp.c~	2004-03-24 14:39:29.000000000 +0100
++++ hsftp-1.15/hsftp.c	2012-10-27 06:34:42.688701307 +0200
+@@ -1233,7 +1233,7 @@ int main (int argc, char * argv[])
+       free(line_read);
+       line_read = NULL;
+ #else
+-      printf (prompt_str);
++      printf ("%s", prompt_str);
+       /* fgets() reads at most MEDBUF-2 chars and null terminates */
+       if (NULL == (fgets  (lin_str, MEDBUF-1, stdin)))
+ 	  break;
