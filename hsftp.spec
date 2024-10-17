@@ -6,7 +6,7 @@ Source0:	%{name}-%{version}.tar.bz2
 Patch0:		hsftp-1.15-fix-string-format.patch
 Patch1:		hsftp-1.15-dont-strip-binary.patch
 License:	Public Domain 
-URL:		http://la-samhna.de/hsftp/
+URL:		https://la-samhna.de/hsftp/
 Group:		Networking/File transfer
 Requires:	openssh-clients
 BuildRequires:	readline-devel
