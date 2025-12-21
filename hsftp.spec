@@ -9,6 +9,11 @@ License:	Public Domain
 URL:		https://la-samhna.de/hsftp/
 Group:		Networking/File transfer
 Requires:	openssh-clients
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	readline-devel
 
 %description
